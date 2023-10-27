@@ -6,20 +6,22 @@
     <title>Google</title>
     <link rel="stylesheet" href="styles/index.css">
 </head>
-<body class="page__body">
-    <header>
-        <nav>
-            <ul>
-                <li><a href="">About</a></li>
-                <li><a href="">Store</a></li>
-                <li><a href="">Gmail</a></li>
-                <li><a href="">Images</a></li>
+<body class="page__body layout">
+    <header class="layout__header header">
+        <nav class="navigation">
+            <ul class="navigation__list">
+                <li><a class="navigation__link" href="">About</a></li>
+                <li><a class="navigation__link" href="">Store</a></li>
+                <li class="navigation__gap"><a class="navigation__link" href="">Gmail</a></li>
+                <li><a class="navigation__link" href="">Images</a></li>
             </ul>
-            <button type="button">Apps</button>
-            <a href="">Sign in</a>
+            <button class="apps" type="button" aria-label="Apps">
+                <svg class="apps__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path d="M6,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM16,6c0,1.1 0.9,2 2,2s2,-0.9 2,-2 -0.9,-2 -2,-2 -2,0.9 -2,2zM12,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2z"/></svg>
+            </button>
+            <a class="button button--action" href="">Sign in</a>
         </nav>
     </header>
-    <main>
+    <main class="layout__main main">
         <h1>
             <img src="images/logo.svg" width="272" height="92" fetchPriority="high" alt="Google">
         </h1>
@@ -30,8 +32,8 @@
                     <button type="button">Search by Voice</button>
                     <button type="button">Search by Image</button>
                 </div>
-                <button type="button">Google Search</button>
-                <button type="button">I'm Feeling Lucky</button>
+                <button class="button button--plain" type="button">Google Search</button>
+                <button class="button button--plain" type="button">I'm Feeling Lucky</button>
             </form>
         </search>
         <p>
@@ -41,7 +43,7 @@
             </a> 
         </p>
     </main>
-    <footer>
+    <footer class="layout__footer footer">
         <p>Moldova</p>
         <ul>
             <li><a href="">Advertising</a></li>
